@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xlmns:th="http://www.thymeleaf.org" xmlns:xlmns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Library Management Platform</title>
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+</head>
+<body>
+<div class="login-container">
+    <h1>Registration</h1>
+    <div class="error" th:if="${param.error}">
+        Recheck the values.
+    </div>
+    <form method="POST" th:action="@{/register}" id="register-form" class="register-form">
+
+        <div class="form-row">
+            <label for="name">Name </label>
+            <input type="text" name="name" id="name" required autofocus>
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email </label>
+            <input type="text" name="email" id="email" required autofocus>
+        </div>
+
+        <div class="form-row">
+            <label for="category">Category </label>
+            <input type="text" name="category" id="category" required autofocus>
+        </div>
+
+        <div class="form-row">
+            <label for="username">Username </label>
+            <input type="text" name="username" id="username" required autofocus>
+        </div>
+
+        <div class="form-row">
+            <label for="password">Password </label>
+            <input type="text" name="password" id="password" required autofocus>
+        </div>
+        <input type="submit" value="Register">
+    </form>
+</div>
+</body>
