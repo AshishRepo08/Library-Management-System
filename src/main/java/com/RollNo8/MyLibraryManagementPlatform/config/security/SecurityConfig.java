@@ -2,7 +2,7 @@ package com.RollNo8.MyLibraryManagementPlatform.config.security;
 
 import com.RollNo8.MyLibraryManagementPlatform.config.security.filter.JwtFilter;
 import com.RollNo8.MyLibraryManagementPlatform.entity.LibraryUser;
-import com.RollNo8.MyLibraryManagementPlatform.repo.LibraryUserRepo;
+import com.RollNo8.MyLibraryManagementPlatform.repository.LibraryUserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -44,6 +44,7 @@ public class SecurityConfig {
                                                                .requestMatchers(HttpMethod.POST,"/register").permitAll()
                                                                .requestMatchers(HttpMethod.POST,"/jwt/**").permitAll()
                                                                .requestMatchers(HttpMethod.GET,"/images/**","/css/**","/home.css").permitAll()
+                                                               .requestMatchers("/v3/api-docs/**","/swagger-ui/**","/swagger-ui.html").permitAll()
                                                                .requestMatchers(HttpMethod.DELETE,"/v2/books/book/**").hasRole("ADMIN")
                                                                .anyRequest().authenticated());
 

@@ -1,6 +1,6 @@
 package com.RollNo8.MyLibraryManagementPlatform.config.security.filter;
 
-import com.RollNo8.MyLibraryManagementPlatform.repo.LibraryUserRepo;
+import com.RollNo8.MyLibraryManagementPlatform.repository.LibraryUserRepo;
 import com.RollNo8.MyLibraryManagementPlatform.serviceJWT.JWTService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

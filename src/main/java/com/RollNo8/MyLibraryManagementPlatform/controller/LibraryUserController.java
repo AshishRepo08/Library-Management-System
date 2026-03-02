@@ -1,7 +1,7 @@
 package com.RollNo8.MyLibraryManagementPlatform.controller;
 
 import com.RollNo8.MyLibraryManagementPlatform.entity.LibraryUser;
-import com.RollNo8.MyLibraryManagementPlatform.repo.LibraryUserRepo;
+import com.RollNo8.MyLibraryManagementPlatform.repository.LibraryUserRepo;
 import com.RollNo8.MyLibraryManagementPlatform.service.LibraryUsersService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

@@ -10,7 +10,6 @@ public class MyLoggingAspect {
 
     @Before("execution(* com.RollNo8.MyLibraryManagementPlatform.controller.BooksController.deleteBook(..))")
     public void bookDeleteExecuted(){
-
         System.out.println("AOP --- Book Deletion Log from the Aspect Class");
     }
 }

@@ -1,12 +1,10 @@
 package com.RollNo8.MyLibraryManagementPlatform.service;
 
 import com.RollNo8.MyLibraryManagementPlatform.entity.Author;
-import com.RollNo8.MyLibraryManagementPlatform.entity.Book;
 import com.RollNo8.MyLibraryManagementPlatform.exceptions.ResourceNotFoundException;
-import com.RollNo8.MyLibraryManagementPlatform.repo.AuthorsRepo;
+import com.RollNo8.MyLibraryManagementPlatform.repository.AuthorsRepo;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.hibernate.ObjectNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

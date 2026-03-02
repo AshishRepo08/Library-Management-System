@@ -1,8 +1,7 @@
-package com.RollNo8.MyLibraryManagementPlatform.repo;
+package com.RollNo8.MyLibraryManagementPlatform.repository;
 
 import com.RollNo8.MyLibraryManagementPlatform.entity.LibraryUser;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Repository;
 
 @Repository

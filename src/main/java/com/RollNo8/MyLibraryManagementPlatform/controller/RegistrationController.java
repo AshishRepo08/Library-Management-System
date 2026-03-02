@@ -1,7 +1,7 @@
 package com.RollNo8.MyLibraryManagementPlatform.controller;
 
 import com.RollNo8.MyLibraryManagementPlatform.entity.RegistrationForm;
-import com.RollNo8.MyLibraryManagementPlatform.repo.LibraryUserRepo;
+import com.RollNo8.MyLibraryManagementPlatform.repository.LibraryUserRepo;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

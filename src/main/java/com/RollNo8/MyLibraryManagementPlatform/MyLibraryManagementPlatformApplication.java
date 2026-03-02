@@ -10,6 +10,6 @@ public class MyLibraryManagementPlatformApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyLibraryManagementPlatformApplication.class, args);
-		System.out.println("Welcome to The Library Management Platform");
+		//System.out.println("Welcome to The Library Management Platform");
 	}
 }

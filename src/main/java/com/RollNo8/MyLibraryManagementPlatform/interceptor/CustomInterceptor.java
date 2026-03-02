@@ -35,13 +35,13 @@ public class CustomInterceptor implements HandlerInterceptor {
         logger.info("Response Status: "+response.getStatus());
     }
 
-    @Override
-    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable Exception ex) throws Exception{
-        logger.info("After Completion method is calling");
-        if(ex !=null){
-            logger.severe("Exception: "+ex.getMessage());
-        } else {
-            logger.info("After Completion method is concluded");
-        }
-    }
+//    @Override
+//    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable Exception ex) throws Exception{
+//        logger.info("After Completion method is calling");
+//        if(ex !=null){
+//            logger.severe("Exception: "+ex.getMessage());
+//        } else {
+//            logger.info("After Completion method is concluded");
+//        }
+//    }
 }

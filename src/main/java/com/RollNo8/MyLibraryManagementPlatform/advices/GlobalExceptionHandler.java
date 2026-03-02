@@ -13,7 +13,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity<?> handleResourceNotFoundException(ResourceNotFoundException ex){
         System.out.println("Resource Not Found Exception In Print");
-        return new ResponseEntity<>("Resource Not Found Exception By AK",HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>("Global Exception Handler : ResourceNotFoundException Encountered. No Book Present With This Id.",HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(RuntimeException.class)
