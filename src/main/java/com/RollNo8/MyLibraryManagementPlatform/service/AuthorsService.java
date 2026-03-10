@@ -22,7 +22,6 @@ public class AuthorsService {
         //Why log.debug() works here ?
         // Because Lombok can generates the below line automatically in the background due to annotation:@Slf4j -
         //private static final Logger log = LoggerFactory.getLogger(BooksService.class);
-
         return authorsRepo.findAll();
     }
 
