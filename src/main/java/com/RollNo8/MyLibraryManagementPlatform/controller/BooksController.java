@@ -48,17 +48,6 @@ public class BooksController {
     public ResponseEntity<?> getBookById(@PathVariable long book_id){
         Book requestedBook = booksService.getBookById(book_id);
         return new ResponseEntity<>(bookMapper.toDto(requestedBook),HttpStatus.FOUND);
-//        try {
-//            Book requestedBook = booksService.getBookById(book_id);
-//            return new ResponseEntity<>(bookMapper.toDto(requestedBook),HttpStatus.FOUND);
-//        } catch (RuntimeException rx){
-//
-//            HttpHeaders headers = new HttpHeaders();
-//            headers.add("code","USER_NOT_FOUND");
-//            headers.add("error","Resource Not Found");
-//
-//            return new ResponseEntity<>("No Book With This Id Found.Recheck the bookId",headers,HttpStatus.NOT_FOUND);
-//        }
     }
 
     //Add A new Book
