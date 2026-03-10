@@ -20,13 +20,6 @@ public class BooksService {
     Logger logger = LoggerFactory.getLogger(BooksService.class);
 
     public List<Book> getAllBooks() {
-
-//        logger.error("ERROR LOG BY AK");
-//        logger.warn("WARN LOG BY AK");
-//        logger.info("INFO LOG BY AK");
-//        logger.debug("DEBUG LOG BY AK ");
-//        logger.trace("TRACE LOG BY AK");
-
         logger.info("Fetched All Books");
         return booksRepo.findAll();
     }
@@ -38,7 +31,7 @@ public class BooksService {
     }
 
     public Book createNewBook(Book newBook) {
-        System.out.println("In Service Method - New Book Created");
+        //System.out.println("In Service Method - New Book Created");
         return booksRepo.save(newBook);
     }
 

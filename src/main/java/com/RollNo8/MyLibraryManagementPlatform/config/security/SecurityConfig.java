@@ -43,6 +43,7 @@ public class SecurityConfig {
                                                                .requestMatchers(HttpMethod.GET,"/register").permitAll()
                                                                .requestMatchers(HttpMethod.POST,"/register").permitAll()
                                                                .requestMatchers(HttpMethod.POST,"/jwt/**").permitAll()
+                                                               .requestMatchers("/h2-console/**").permitAll()
                                                                .requestMatchers(HttpMethod.GET,"/images/**","/css/**","/home.css").permitAll()
                                                                .requestMatchers("/v3/api-docs/**","/swagger-ui/**","/swagger-ui.html").permitAll()
                                                                .requestMatchers(HttpMethod.DELETE,"/v2/books/book/**").hasRole("ADMIN")
